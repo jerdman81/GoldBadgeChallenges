@@ -56,6 +56,34 @@ namespace _03_KomodoBadge.UI
         {
             Console.Clear();  // clear the console
             Badge badge = new Badge();
+
+            Console.WriteLine("What is the number on the badge: ");
+            int badgeNumber = Convert.ToInt32(Console.ReadLine());
+            badge.BadgeID = badgeNumber;
+
+            List<string> doorNames = new List<string>();
+
+            bool hasAddedAllDoors = false;
+            while (hasAddedAllDoors == false)
+            {
+                Console.WriteLine("List a door that it needs access to: ");
+                string doorName = Console.ReadLine();
+                doorNames.Add(doorName);
+                Console.WriteLine(" Are there any other doors (y/n>");
+                string userInput = Console.ReadLine();
+                if (userInput == "Y".ToLower())
+                {
+                    continue;
+                }
+                else
+                {
+                    hasAddedAllDoors = true;
+                    badge.DoorNames = doorNames;
+                }
+            }
+
+            _badgeRepo.AddBadge(badge);
+            
         }
 
         private void EditAnExistingBadge()
@@ -65,7 +93,15 @@ namespace _03_KomodoBadge.UI
 
         private void ListAllExistingBadges()
         {
+            Console.Clear();
+            Console.WriteLine("List of Existing Badges: ");
+            _ = _badgeRepo.GetAllBadges();
 
+        }
+        private void DisplayBadgeDetails(Badge badge)
+        {
+            Console.WriteLine($"Badge #: {badge.BadgeID}\n" +
+                $"Door Access: {badge.DoorNames}\n");
         }
 
 

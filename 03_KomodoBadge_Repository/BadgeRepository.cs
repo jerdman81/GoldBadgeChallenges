@@ -8,6 +8,7 @@ namespace _03_KomodoBadge_Repository
 {
     public class BadgeRepository
     {
+        // This is the Badge Database
         // HINT  Use a Dictionary
         Dictionary<int, Badge> badgeDictionary = new Dictionary<int, Badge>();
 
@@ -30,6 +31,10 @@ namespace _03_KomodoBadge_Repository
         }
 
         //Read  -  Return Dictionary<int, badge>
+        public Dictionary<int, Badge>  GetAllBadges()
+        {
+            return badgeDictionary;
+        }
 
         //Read - Return Badge by ID
         public Badge GetBadgeByID(int key)
@@ -49,7 +54,12 @@ namespace _03_KomodoBadge_Repository
 
 
         //Delete Badge
+        
+
 
         //Delete Doors from Existing Badge
+
+
+
     }
 }
