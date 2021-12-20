@@ -1,0 +1,17 @@
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\01_KomodoCafe.Tests.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\01_KomodoCafe.Tests.pdb
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\01_KomodoCafe.Repository.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\01_KomodoCafe.Repository.pdb
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\obj\Debug\01_KomodoCafe.Tests.csproj.AssemblyReference.cache
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\obj\Debug\01_KomodoCafe.Tests.csproj.CoreCompileInputs.cache
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\obj\Debug\01_KomodoCafe.Tests.csproj.CopyComplete
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\obj\Debug\01_KomodoCafe.Tests.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\01_KomodoCafe.Tests\obj\Debug\01_KomodoCafe.Tests.pdb
