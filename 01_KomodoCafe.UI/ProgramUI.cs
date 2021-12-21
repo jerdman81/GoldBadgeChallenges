@@ -1,10 +1,6 @@
 ﻿using _01_KomodoCafe.Repository;
-using _01_KomodoCafe.UI.UI;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_KomodoCafe.UI
 {
@@ -13,7 +9,7 @@ namespace _01_KomodoCafe.UI
 
         //add links to existing repositories
         private readonly MenuItemRepository _menuItemRepo = new MenuItemRepository();
-        
+
         public void Run()  // everything except Run() is private so it can't be accessed
         {
             RunApplication();
@@ -64,7 +60,7 @@ namespace _01_KomodoCafe.UI
             string mealDescription = Console.ReadLine();
             menuItem.MealDescription = mealDescription;
 
-            List<string> mealIngredients = new List<string>(); 
+            List<string> mealIngredients = new List<string>();
 
             bool hasAddedAllIngredients = false;
             while (hasAddedAllIngredients == false)
@@ -129,7 +125,7 @@ namespace _01_KomodoCafe.UI
         }
 
 
-        
+
         private void ViewAllMenuItems()
         {
             Console.Clear();
@@ -137,7 +133,7 @@ namespace _01_KomodoCafe.UI
             List<MenuItem> menuItems = _menuItemRepo.GetAllMenuItems();
             foreach (MenuItem item in menuItems)
             {
-                DisplayContentListItem(item); 
+                DisplayContentListItem(item);
             }
             WaitForKeypress();
         }
@@ -147,7 +143,7 @@ namespace _01_KomodoCafe.UI
             Console.WriteLine($"Meal Number: {menuItem.MealID}\n" +
                 $"Name: {menuItem.MealName}\n" +
                 $"Description: {menuItem.MealDescription}\n" +
-                $"Price: {menuItem.MealPrice}\n" +                
+                $"Price: {menuItem.MealPrice}\n" +
                 $"============================\n");
             Console.WriteLine("Ingredients:");
             foreach (var item in menuItem.MealIngredient)
@@ -164,7 +160,7 @@ namespace _01_KomodoCafe.UI
             Console.ReadKey();
         }
 
-       
+
 
     }
 }

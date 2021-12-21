@@ -1,9 +1,6 @@
 ﻿using _03_KomodoBadge_Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03_KomodoBadge.UI
 {
@@ -80,7 +77,7 @@ namespace _03_KomodoBadge.UI
             }
 
             _badgeRepo.AddBadge(badge);
-            
+
         }
 
         private void EditAnExistingBadge()

@@ -1,0 +1,11 @@
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\bin\Debug\04_KomodoOutings.UI.exe.config
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\bin\Debug\04_KomodoOutings.UI.exe
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\bin\Debug\04_KomodoOutings.UI.pdb
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\bin\Debug\04_KomodoOutings.Repository.dll
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\bin\Debug\04_KomodoOutings.Repository.pdb
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.csproj.AssemblyReference.cache
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.csproj.CoreCompileInputs.cache
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.csproj.CopyComplete
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.exe
+C:\Users\jderd\Documents\ElevenFiftyProjects\DotNetProjects\GoldBadgeChallenges\04_KomodoOutings.UI\obj\Debug\04_KomodoOutings.UI.pdb

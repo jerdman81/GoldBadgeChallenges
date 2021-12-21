@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace _01_KomodoCafe.Repository
 {
@@ -15,7 +11,7 @@ namespace _01_KomodoCafe.Repository
         // Create - A Menu Item
         public bool AddAMenuItem(MenuItem menuItem)
         {
-            
+
             if (menuItem == null)
             {
                 return false;
@@ -25,7 +21,7 @@ namespace _01_KomodoCafe.Repository
                 _id++;
                 menuItem.MealID = _id;
                 _menuItemsContext.Add(menuItem);
-                return true; 
+                return true;
             }
         }
 

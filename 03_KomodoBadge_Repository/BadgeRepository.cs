@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace _03_KomodoBadge_Repository
 {
@@ -57,7 +53,7 @@ namespace _03_KomodoBadge_Repository
             Badge existingBadge = GetBadgeByID(key);
 
             // Remove the Door
-            existingBadge.DoorNames.Remove(doorToRemove); 
+            existingBadge.DoorNames.Remove(doorToRemove);
         }
 
         //Update - Add a door to existing badge
