@@ -28,14 +28,19 @@
     },
     "83b29735-f209-4a11-9494-dedde6ca427f": {
       "ProjectGuid": "83b29735-f209-4a11-9494-dedde6ca427f",
-      "DisplayName": "03_KomodoBadge.UI",
+      "DisplayName": "03_KomodoBadges.UI",
       "ColorIndex": 5
     },
     "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "68cb5828-8e69-427c-8289-530d6d736d6e": {
+      "ProjectGuid": "68cb5828-8e69-427c-8289-530d6d736d6e",
+      "DisplayName": "03_KomodoBadge_Repository",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

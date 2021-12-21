@@ -13,7 +13,7 @@ namespace _03_KomodoBadge_Repository
         Dictionary<int, Badge> badgeDictionary = new Dictionary<int, Badge>();
 
         private int _badgeID;
-        
+
         //Create A New Badge
         public bool AddBadge(Badge badge)
         {
@@ -31,10 +31,13 @@ namespace _03_KomodoBadge_Repository
         }
 
         //Read  -  Return Dictionary<int, badge>
-        public Dictionary<int, Badge>  GetAllBadges()
+        public Dictionary<int, Badge> GetAllBadges()
         {
             return badgeDictionary;
         }
+
+
+
 
         //Read - Return Badge by ID
         public Badge GetBadgeByID(int key)
@@ -48,18 +51,18 @@ namespace _03_KomodoBadge_Repository
 
             }
             return null;
-        }
+        } 
 
         //Update
 
 
         //Delete Badge
-        
+
 
 
         //Delete Doors from Existing Badge
-
-
-
     }
 }
+
+
+   
