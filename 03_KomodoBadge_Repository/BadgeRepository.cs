@@ -12,7 +12,7 @@ namespace _03_KomodoBadge_Repository
         // HINT  Use a Dictionary
         Dictionary<int, Badge> badgeDictionary = new Dictionary<int, Badge>();
 
-        private int _badgeID;
+        private int _badgeID = 100;
 
         //Create A New Badge
         public bool AddBadge(Badge badge)
@@ -31,13 +31,10 @@ namespace _03_KomodoBadge_Repository
         }
 
         //Read  -  Return Dictionary<int, badge>
-        public Dictionary<int, Badge> GetAllBadges()
+        public Dictionary<int, Badge> GetAllBadges()  // Return type is the dictionary
         {
-            return badgeDictionary;
+            return badgeDictionary;  // Need Helper method below in order to return full dictionary.
         }
-
-
-
 
         //Read - Return Badge by ID
         public Badge GetBadgeByID(int key)
@@ -48,21 +45,32 @@ namespace _03_KomodoBadge_Repository
                 {
                     return badge.Value;
                 }
-
             }
             return null;
-        } 
+        }
 
-        //Update
+        //Update - Remove a door from existing badge
+
+        public Badge RemoveDoorFromExistingBadge(int dictKey, string doorToRemove)
+        {
+
+            foreach (var badge in badgeDictionary)
+            {
+                if(badge.Key == dictKey)
+                {
+                    if (badge.Value.DoorNames.Contains(doorToRemove))
+                    {
+                        badge.Value.DoorNames.Remove(doorToRemove);
+                    }
+                }
+            }
+            return null;
+        }
+
+            //Update - Add a door to existing badge
 
 
-        //Delete Badge
 
-
-
-        //Delete Doors from Existing Badge
+        
     }
 }
-
-
-   

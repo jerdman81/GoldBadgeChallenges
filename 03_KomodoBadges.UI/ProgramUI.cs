@@ -84,28 +84,71 @@ namespace _03_KomodoBadge.UI
 
         private void EditAnExistingBadge()
         {
-
+            Console.Clear();
+            Console.WriteLine("What is the badge number to update: ");
+            string badgeNumber = Console.ReadLine();
+            int badgeNumberInt = Convert.ToInt32(badgeNumber);
+            Badge badgeToFind = _badgeRepo.GetBadgeByID(badgeNumberInt);
+            DisplayBadgeDetails(badgeToFind);
+            Console.WriteLine("What would you like to do? \n" +
+                "1. Remove a door\n" +
+                "2. Add a door\n");
+            string userInput = Console.ReadLine();
+            switch (userInput)
+            {
+                case "1":
+                    RemoveADoor();
+                    break;
+                case "2":
+                    AddADoor();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Selection");
+                    WaitForKeypress();
+                    break;
+            }
+            DisplayBadgeDetails(badgeToFind);
+            WaitForKeypress();
         }
 
         private void ListAllExistingBadges()
         {
             Console.Clear();
-            Console.WriteLine("List of Existing Badges: ");
+            Console.WriteLine("List of Existing Badges: \n");
             var badges = _badgeRepo.GetAllBadges();
             foreach (var badge in badges.Values)
             {
-                DisplayBadgeDetails(badge);
+                DisplayBadgeDetails(badge);   // Helper Method
             }
             WaitForKeypress();
 
         }
-        private void DisplayBadgeDetails(Badge badge)
+        private void DisplayBadgeDetails(Badge badge)  //Helper Method
         {
-            Console.WriteLine($"Badge #: {badge.BadgeID}");
+            Console.WriteLine($"Badge #:\n {badge.BadgeID}\n");
+            Console.WriteLine("Door Access:");
             foreach (var door in badge.DoorNames)
             {
                 Console.WriteLine(door);
             }
+            Console.WriteLine("\n=============================\n");
+        }
+
+        private void RemoveADoor()
+        {
+            Console.WriteLine("Which door would you like to remove?");
+            string userInput = Console.ReadLine();
+            // This is the part I don't know
+            Console.WriteLine("Door Removed\n");
+        }
+
+        private void AddADoor()
+        {
+            Console.WriteLine("Which door would you like to add?");
+            string userInput = Console.ReadLine();
+            // This is the part I don't know
+            Console.WriteLine("Door Added\n");
+
         }
 
 
