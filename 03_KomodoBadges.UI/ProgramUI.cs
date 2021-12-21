@@ -17,6 +17,7 @@ namespace _03_KomodoBadge.UI
         public void Run()  // everything except Run() is private so it can't be accessed
         {
             RunApplication();
+            SeedContent();
         }
 
         private void RunApplication()
@@ -65,7 +66,7 @@ namespace _03_KomodoBadge.UI
                 Console.WriteLine("List a door that it needs access to: ");
                 string doorName = Console.ReadLine();
                 doorNames.Add(doorName);
-                Console.WriteLine(" Are there any other doors (y/n>");
+                Console.WriteLine(" Are there any other doors (y/n)");
                 string userInput = Console.ReadLine();
                 if (userInput == "Y".ToLower())
                 {
@@ -97,16 +98,23 @@ namespace _03_KomodoBadge.UI
             switch (userInput)
             {
                 case "1":
-                    RemoveADoor();
+                    Console.WriteLine("Which door would you like to remove?");
+                    string userInputRemove = Console.ReadLine();
+                    _badgeRepo.RemoveDoorFromExistingBadge(badgeNumberInt, userInputRemove);
+                    Console.WriteLine("Door Removed\n");
                     break;
                 case "2":
-                    AddADoor();
+                    Console.WriteLine("Which door would you like to add?");
+                    string userInputAdd = Console.ReadLine();
+                    _badgeRepo.AddDoorToExistingBadge(badgeNumberInt, userInputAdd);
+                    Console.WriteLine("Door Added\n");
                     break;
                 default:
                     Console.WriteLine("Invalid Selection");
                     WaitForKeypress();
                     break;
             }
+            Console.WriteLine("Updated Badge Details:");
             DisplayBadgeDetails(badgeToFind);
             WaitForKeypress();
         }
@@ -133,28 +141,33 @@ namespace _03_KomodoBadge.UI
             }
             Console.WriteLine("\n=============================\n");
         }
-
-        private void RemoveADoor()
-        {
-            Console.WriteLine("Which door would you like to remove?");
-            string userInput = Console.ReadLine();
-            // This is the part I don't know
-            Console.WriteLine("Door Removed\n");
-        }
-
-        private void AddADoor()
-        {
-            Console.WriteLine("Which door would you like to add?");
-            string userInput = Console.ReadLine();
-            // This is the part I don't know
-            Console.WriteLine("Door Added\n");
-
-        }
-
-
         private void WaitForKeypress()
         {
             Console.ReadKey();
+        }
+
+        private void SeedContent()  // doesn't work
+        {
+            Badge badgeOne = new Badge();
+            badgeOne.DoorNames = new List<string>();
+            badgeOne.DoorNames.Add("A5");
+            badgeOne.DoorNames.Add("A1");
+            badgeOne.DoorNames.Add("B1");
+            _badgeRepo.AddBadge(badgeOne);
+
+            Badge badgeTwo = new Badge();
+            badgeTwo.DoorNames = new List<string>();
+            badgeTwo.DoorNames.Add("A1");
+            badgeTwo.DoorNames.Add("A2");
+            badgeTwo.DoorNames.Add("A3");
+            _badgeRepo.AddBadge(badgeTwo);
+
+            Badge badgeThree = new Badge();
+            badgeThree.DoorNames = new List<string>();
+            badgeThree.DoorNames.Add("B1");
+            badgeThree.DoorNames.Add("B2");
+            badgeThree.DoorNames.Add("B3");
+            _badgeRepo.AddBadge(badgeThree);
         }
     }
 }

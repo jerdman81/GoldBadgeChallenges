@@ -51,26 +51,22 @@ namespace _03_KomodoBadge_Repository
 
         //Update - Remove a door from existing badge
 
-        public Badge RemoveDoorFromExistingBadge(int dictKey, string doorToRemove)
+        public void RemoveDoorFromExistingBadge(int key, string doorToRemove)
         {
+            // find the existing content
+            Badge existingBadge = GetBadgeByID(key);
 
-            foreach (var badge in badgeDictionary)
-            {
-                if(badge.Key == dictKey)
-                {
-                    if (badge.Value.DoorNames.Contains(doorToRemove))
-                    {
-                        badge.Value.DoorNames.Remove(doorToRemove);
-                    }
-                }
-            }
-            return null;
+            // Remove the Door
+            existingBadge.DoorNames.Remove(doorToRemove); 
         }
 
-            //Update - Add a door to existing badge
-
-
-
-        
+        //Update - Add a door to existing badge
+        public void AddDoorToExistingBadge(int key, string doorToAdd)
+        {
+            // Find the existing content
+            Badge existingBadge = GetBadgeByID(key);
+            // add the door
+            existingBadge.DoorNames.Add(doorToAdd);
+        }
     }
 }
