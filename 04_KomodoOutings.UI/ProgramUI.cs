@@ -66,7 +66,7 @@ namespace _04_KomodoOutings.UI
                 "4. Concert\n");
             string outingType = Console.ReadLine();
             int outingTypeToInt = Convert.ToInt32(outingType);
-            outing.TypeOfOuting = (OutingType)outingTypeToInt; 
+            outing.TypeOfOuting = (OutingType)outingTypeToInt;
 
             Console.Write("How many people attended?: ");
             string outingAttendance = Console.ReadLine();
@@ -132,7 +132,7 @@ namespace _04_KomodoOutings.UI
             decimal outingsCost = _outingRepository.TotalOutingsCostByType((OutingType)outingTypeToInt);
             Console.WriteLine($"The total cost of the outings is ${outingsCost}.");
             WaitForKeypress();
-            
+
         }
         private void WaitForKeypress()
         {

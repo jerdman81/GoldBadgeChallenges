@@ -2,7 +2,7 @@
 
 namespace _04_KomodoOutings.Repository
 {
-    public enum OutingType { Golf=1, Bowling, AmusementPark, Concert }
+    public enum OutingType { Golf = 1, Bowling, AmusementPark, Concert }
     public class Outing
     {
         // Pocos
@@ -43,7 +43,7 @@ namespace _04_KomodoOutings.Repository
 
         // Event Cost Per Person
         private decimal EventCostPerPerson => Convert.ToDecimal(EventCost / Attendance);
-        
+
 
     }
 }

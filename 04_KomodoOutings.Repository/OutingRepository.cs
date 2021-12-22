@@ -31,7 +31,7 @@ namespace _04_KomodoOutings.Repository
         {
             return _outingsContext;
         }
-                
+
 
         // Read - Total outings cost
         public decimal TotalOutingsCost()
@@ -41,7 +41,7 @@ namespace _04_KomodoOutings.Repository
 
         // Read - Total outings cost by Type
 
-       public decimal TotalOutingsCostByType(OutingType outingType)
+        public decimal TotalOutingsCostByType(OutingType outingType)
         {
             decimal totalOutingsCost = 0;
             foreach (var outing in _outingsContext)

@@ -12,8 +12,11 @@ namespace _01_KomodoCafe.UI
 
         public void Run()  // everything except Run() is private so it can't be accessed
         {
+            SeedData();
             RunApplication();
         }
+
+
 
         private void RunApplication()
         {
@@ -158,6 +161,47 @@ namespace _01_KomodoCafe.UI
         private void WaitForKeypress()
         {
             Console.ReadKey();
+        }
+        private void SeedData()
+        {
+            MenuItem itemOne = new MenuItem();
+            itemOne.MealName = "QP with Cheese";
+            itemOne.MealDescription = "Quarter Pound Cheeseburger with Fries and a Fountain Drink";
+            itemOne.MealPrice = 5.55m;
+            List<string> ingredientsOne = new List<string>()
+            {
+                "Quarter Pound Cheeseburger",
+                "Medium Fries",
+                "Fountain Drink"
+            };
+            itemOne.MealIngredient = ingredientsOne;
+            _menuItemRepo.AddAMenuItem(itemOne);
+
+            MenuItem itemTwo = new MenuItem();
+            itemTwo.MealName = "Nugs";
+            itemTwo.MealDescription = "Ten Piece Chicken Nuggets with Fries and a Fountain Drink";
+            itemTwo.MealPrice = 6.25m;
+            List<string> ingredientsTwo = new List<string>()
+            {
+                "Ten Chicken Nuggets",
+                "Medium Fries",
+                "Fountain Drink"
+            };
+            itemTwo.MealIngredient = ingredientsTwo;
+            _menuItemRepo.AddAMenuItem(itemTwo);
+
+            MenuItem itemThree = new MenuItem();
+            itemThree.MealName = "Big Salad";
+            itemThree.MealDescription = "Two small salads put together to make a Big Salad";
+            itemThree.MealPrice = 7.25m;
+            List<string> ingredientsThree = new List<string>()
+            {
+                "Lettuce",
+                "Other Veggies",
+                "Ranch Dressing"
+            };
+            itemThree.MealIngredient = ingredientsThree;
+            _menuItemRepo.AddAMenuItem(itemThree);
         }
 
 
