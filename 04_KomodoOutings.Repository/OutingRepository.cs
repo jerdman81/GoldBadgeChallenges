@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace _04_KomodoOutings.Repository
 {
@@ -30,14 +31,27 @@ namespace _04_KomodoOutings.Repository
         {
             return _outingsContext;
         }
+                
 
-        //Read - Return Outings by Type
-        public List<Outing> GetOutingsByType()  // Return type is the list
+        // Read - Total outings cost
+        public decimal TotalOutingsCost()
         {
-            return _outingsContext;
+            return _outingsContext.Sum(p => p.EventCost);
         }
 
+        // Read - Total outings cost by Type
 
-
+       public decimal TotalOutingsCostByType(OutingType outingType)
+        {
+            decimal totalOutingsCost = 0;
+            foreach (var outing in _outingsContext)
+            {
+                if (outing.TypeOfOuting == outingType)
+                {
+                    totalOutingsCost += outing.EventCost;
+                }
+            }
+            return totalOutingsCost;
+        }
     }
 }

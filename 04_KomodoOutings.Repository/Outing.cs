@@ -42,7 +42,7 @@ namespace _04_KomodoOutings.Repository
         public decimal EventCost { get; set; }
 
         // Event Cost Per Person
-        public decimal EventCostPerPerson => Convert.ToDecimal(EventCost / Attendance);
+        private decimal EventCostPerPerson => Convert.ToDecimal(EventCost / Attendance);
         
 
     }

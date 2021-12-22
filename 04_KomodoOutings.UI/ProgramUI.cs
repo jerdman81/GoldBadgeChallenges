@@ -13,6 +13,7 @@ namespace _04_KomodoOutings.UI
         // add Run method for Program.cs
         public void Run()  // everything except Run() is private so it can't be accessed
         {
+            SeedContent();
             RunApplication();
         }
 
@@ -112,10 +113,13 @@ namespace _04_KomodoOutings.UI
 
         private void DisplayCombinedOutingCost()
         {
-
+            Console.Clear();
+            decimal totalCost = _outingRepository.TotalOutingsCost();
+            Console.WriteLine($"The total cost for all outings is: ${totalCost}.");
+            WaitForKeypress();
         }
 
-        private void DisplayOutingCostByType(Outing outing)
+        private void DisplayOutingCostByType()
         {
             Console.Clear();
             Console.WriteLine("Which outing type do you want to see: \n" +
@@ -125,14 +129,47 @@ namespace _04_KomodoOutings.UI
                 "4. Concert\n");
             string outingType = Console.ReadLine();
             int outingTypeToInt = Convert.ToInt32(outingType);
-
-            return _outingRepository.GetOutingsByType(outingTypeToInt);
+            decimal outingsCost = _outingRepository.TotalOutingsCostByType((OutingType)outingTypeToInt);
+            Console.WriteLine($"The total cost of the outings is ${outingsCost}.");
+            WaitForKeypress();
+            
         }
-        
-
         private void WaitForKeypress()
         {
             Console.ReadKey();
+        }
+
+        private void SeedContent()
+        {
+            Outing outingOne = new Outing();
+            outingOne.TypeOfOuting = OutingType.Golf;
+            outingOne.Attendance = 12;
+            outingOne.DateOfEvent = new DateTime(2021, 7, 3);
+            outingOne.EventCost = 235.32m;
+            _outingRepository.AddAnOuting(outingOne);
+
+            Outing outingTwo = new Outing();
+            outingTwo.TypeOfOuting = OutingType.Concert;
+            outingTwo.Attendance = 25;
+            outingTwo.DateOfEvent = new DateTime(2021, 8, 1);
+            outingTwo.EventCost = 475.65m;
+            _outingRepository.AddAnOuting(outingTwo);
+
+            Outing outingThree = new Outing();
+            outingThree.TypeOfOuting = OutingType.AmusementPark;
+            outingThree.Attendance = 17;
+            outingThree.DateOfEvent = new DateTime(2021, 9, 2);
+            outingThree.EventCost = 322.75m;
+            _outingRepository.AddAnOuting(outingThree);
+
+            Outing outingFour = new Outing();
+            outingFour.TypeOfOuting = OutingType.Golf;
+            outingFour.Attendance = 5;
+            outingFour.DateOfEvent = new DateTime(2021, 10, 5);
+            outingFour.EventCost = 82.25m;
+            _outingRepository.AddAnOuting(outingFour);
+
+
         }
     }
 }

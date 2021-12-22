@@ -13,8 +13,8 @@ namespace _03_KomodoBadge.UI
         // add Run method for Program.cs
         public void Run()  // everything except Run() is private so it can't be accessed
         {
-            RunApplication();
             SeedContent();
+            RunApplication();
         }
 
         private void RunApplication()
@@ -143,7 +143,7 @@ namespace _03_KomodoBadge.UI
             Console.ReadKey();
         }
 
-        private void SeedContent()  // doesn't work
+        private void SeedContent()
         {
             Badge badgeOne = new Badge();
             badgeOne.DoorNames = new List<string>();

@@ -23,6 +23,33 @@ I completed three of the available challenges in three days.
 
 ## Challenge 3 - Komodo Badges
 
+- In this challenge the developer is tasked with:
+
+    ```
+    {
+        Your task will be to create the following:
+
+            A badge class that has the following properties:
+
+                BadgeID
+                List of door names for access
+
+ 
+        A badge repository that will have methods that do the following:
+
+                Create a dictionary of badges.
+                The key for the dictionary will be the BadgeID.
+                The value for the dictionary will be the List of Door Names.
+
+ 
+        The Program will allow a security staff member to do the following:
+
+                create a new badge
+                update doors on an existing badge.
+                delete all doors from an existing badge.
+                show a list with all badge numbers and door access, like this:
+    }
+    ```
 
 - This challenge mainly consisted of three key files
 
@@ -33,6 +60,31 @@ I completed three of the available challenges in three days.
 - The main challenge in this project was working with Dictionaries as the Badge ID and Door Numbers are a key/value pair.
 
 ## Challenge 4 - Komodo Outings
+
+- In this challenge the developer is tasked with:
+
+        ```
+        {
+        Komodo accountants need a list of all outings, the cost of all outings combined, and the cost of all types of outings combined.
+        Here are the parts of an outing:
+
+            Event Type:   Golf, Bowling, Amusement Park, Concert
+            Number of people that attended
+            Date
+            Total cost per person for the event
+            Total cost for the event
+
+ 
+        Here's what they'd like:
+
+            Display a list of all outings.
+            Add individual outings to a list(don't need to worry about delete yet)
+            Calculations:
+                They'd like to see a display for the combined cost for all outings.
+                They'd like to see a display of outing costs by type.
+                    For example, all bowling outings for the year were $2000.00. All Concert outings cost $5000.00
+        }
+        ```
 
 - This challenge mainly consisted of three key files
 
